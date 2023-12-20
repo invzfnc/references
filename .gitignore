@@ -1,0 +1,9 @@
+# Vim swap files
+*~
+*.swp
+
+# Obsidian files
+.obsidian
+
+__pycache__/
+*.pyc
