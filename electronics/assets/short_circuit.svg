@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 19.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 198 138" style="enable-background:new 0 0 198 138;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:none;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+	.st1{fill:none;stroke:#000000;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+	.st2{fill:none;stroke:#000000;stroke-width:2;stroke-miterlimit:10;}
+	.st3{fill:none;stroke:#000000;stroke-linecap:round;stroke-miterlimit:10;}
+	.st4{fill:none;stroke:#000000;stroke-width:1.5;stroke-miterlimit:10;}
+	.st5{fill:none;stroke:#000000;stroke-width:2;stroke-linecap:round;stroke-miterlimit:10;}
+	.st6{fill:none;}
+	.st7{stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+	.st8{fill:none;stroke:#000000;stroke-miterlimit:10;}
+	.st9{fill:#FFFFFF;stroke:#000000;stroke-miterlimit:10;}
+	.st10{fill:#11ACCD;}
+	.st11{fill:none;stroke:#11ACCD;stroke-width:3;stroke-linecap:round;stroke-miterlimit:10;}
+	.st12{fill:#FF9C39;}
+	.st13{fill:none;stroke:#FF9C39;stroke-width:2;stroke-linecap:round;stroke-miterlimit:10;}
+	.st14{fill:none;stroke:#E84D39;stroke-width:2;stroke-linecap:round;stroke-miterlimit:10;}
+	.st15{fill:#E84D39;}
+</style>
+<g>
+	<circle class="st2" cx="36" cy="72" r="18"/>
+	<polyline class="st3" points="36,54 36,24 132,24 	"/>
+	<polyline class="st0" points="132,120 36,120 36,90 	"/>
+	<line class="st4" x1="36" y1="58.5" x2="36" y2="70.5"/>
+	<line class="st4" x1="30" y1="64.5" x2="42" y2="64.5"/>
+	<line class="st4" x1="30" y1="82.5" x2="42" y2="82.5"/>
+</g>
+<g>
+	<line class="st0" x1="132" y1="48.6" x2="132" y2="24"/>
+	<polyline class="st1" points="132,95.4 123,91.5 141,83.7 123,75.9 141,68.1 123,60.3 141,52.5 132,48.6 	"/>
+	<line class="st0" x1="132" y1="120" x2="132" y2="95.4"/>
+	<rect x="120" y="24" class="st6" width="24" height="96"/>
+</g>
+<g>
+	<g>
+		<path class="st14" d="M164.4,101.3c2.2-7.5,3.6-17.8,3.6-29.3c0-15.5-2.5-29-6.2-36"/>
+		<g>
+			<path class="st15" d="M161.8,108c2.4-2.7,5.9-5.9,9-7.6l-6.1-0.1l-4.6-3.9C161.3,99.6,161.8,104.4,161.8,108z"/>
+		</g>
+	</g>
+</g>
+<path class="st3" d="M133.6,120c13.4-9.4,22.4-27.3,22.4-48c0-20.7-9.1-38.6-22.4-48"/>
+</svg>
