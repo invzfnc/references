@@ -3,6 +3,9 @@
 `h` - Navigate left  
 `l` - Navigate right  
 
+`C-d` - Navigate up
+`C-u` - Navigate down
+
 `i` - Switch to Insert Mode  
 `R` - Switch to Replace Mode  
 `v` - Switch to Visual Mode  
@@ -10,6 +13,10 @@
 `<C-v>` - Block Visual Mode  
 `gv` - Switch to Virtual Replace Mode  
 `<Esc>` - Return to Normal Mode (`<C-c>` equivalent, recommended)  
+
+`L` - Move cursor to lowest line (viewable)
+`M` - Move cursor to line in middle (viewable)
+`H` - Move cursor to highest line (viewable)
 
 `w` - Move cursor to start of next word  
 `e` - Move cursor to end of word  
@@ -68,3 +75,7 @@
 If cursor is not already positioned on a number, then the command will look ahead for a digit on the current line  
 
 `ga` - Output numeric code for character under cursor  
+
+**Modifiers**
+`i` - Inside. Example: `di[`, delete words within brackets
+`a` - Around. Example: `da[`, delete words along with brackets
