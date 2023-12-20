@@ -5,5 +5,7 @@
 # Obsidian files
 .obsidian
 
+# Scripts and cache
 __pycache__/
 *.pyc
+*.py
