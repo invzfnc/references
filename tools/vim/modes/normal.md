@@ -51,6 +51,7 @@
 `dd` - Delete current line  
 `daw` - Delete current word  
 `dap` - Delete current paragraph  
+`dgg` - Delete from current line till start of file
 
 `>>` - Increase indentation of current line  
 `>G` - Increase indentation from current line until the end of file  
