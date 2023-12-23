@@ -31,6 +31,8 @@ Print absolute path of `filename` in `$PATH`
 
 `ls -l`
 Long listing format - detailed list of files in directory, along with file permissions
+`ls -l -h` - Human readable
+`ls -a` - Do not ignore entries starting with `.`
 
 `man program`
 Manual
