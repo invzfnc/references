@@ -10,6 +10,9 @@ Prompt
 `xdg-open .` - Open file explorer
 `xdg-open file` - Launch default app to open file
 
+`echo -n`
+echo without newline
+
 `cd` (Without arguments)
 To `/home/<user>`
 
@@ -65,3 +68,7 @@ Prints result of `ls` followed by `ls ..`
 `tee`
 `echo hello | tee file`
 Redirects output stream of left side to right side, `tee` then writes input to both `stdout` and to `file`
+
+`/dev/null`
+`grep foobar filename > /dev/null 2> /dev/null`
+Throw away/suppress output
