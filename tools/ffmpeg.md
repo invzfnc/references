@@ -18,5 +18,7 @@
 **Concatenate video (listed file)**
 `ffmpeg -f concat -i video-list.txt -c copy out.mp4`
 
+**Add subtitle/captions**
+`ffmpeg -i in.mp4 -vf "subtitles=captions.sbv:force_style='Fontname=Calibri,OutlineColour=&H808080,BorderStyle=3,FontSize=16'" out.mp4`
 
 https://gist.github.com/steven2358/ba153c642fe2bb1e47485962df07c730#ffmpeg-cheat-sheet
