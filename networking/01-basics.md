@@ -1,3 +1,5 @@
+Notes are based off Networking All-in-One for Dummies (7th edition)
+
 #### Network
 Network: Nodes (devices) connected either by cable or a wireless radio connection so that they could exchange information
 
