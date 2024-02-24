@@ -20,14 +20,14 @@ echo "We are in $(pwd)"
 ```
 
 Reserved variables
-`$0` - Name of bash script/program
-`$1` - First argument
-`$?` - Error code from the previous command
-`$_` - Last argument from the previous command
-`!!` - "bang bang", Last command executed
-`true` - Equal to `0`
-`false` - Equal to `1`
-`$a` - All argv
+`$0` - Name of bash script/program  
+`$1` - First argument  
+`$?` - Error code from the previous command  
+`$_` - Last argument from the previous command  
+`!!` - "bang bang", Last command executed  
+`true` - Equal to `0`  
+`false` - Equal to `1`  
+`$a` - All argv  
 
 Example:
 ```bash
