@@ -65,7 +65,31 @@ float var;
 scanf("%f\n", &var);
 ```
 
-#### Extra: Rounding up
+#### Defining Constants/Macros
+```c
+#define RECIPROCAL_OF_PI (1.0f / 3.14159f)
+```
+Parenthesis added for safeness (operator precedence)
+
+#### Rules for Naming Identifiers
+Identifiers are names for variables, macros, functions, and other entities.
+- Identifiers may contain letters, digits and underscores
+- Identifiers must begin with a letter
+- Identifiers are case sensitive
+
+#### Tokens
+Tokens are groups of characters that can't be split up without changing their meaning.
+```c
+/* Example */
+printf("Height: %d\n", height);
+```
+- `printf` and `height` are identifiers
+- `"Height: %d\n"` is a string literal
+- `(`, `)` and `;` are punctuations
+
+Spaces are not critical in most cases. All tokens can be crammed together with no space between  them at all.
+
+#### Extra: Inches per pound, rounding up
 Add 165, then divide by 166
 ```c
 weight = (volume + 165) / 166
