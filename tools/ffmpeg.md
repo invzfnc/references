@@ -10,7 +10,7 @@
 \<x> in seconds
 
 **Crop video length**
-`ffmpeg --ss 00:00:01 -i video.mp4 -to 00:02:20 -c copy out.mp4`
+`ffmpeg -ss 00:00:01 -i video.mp4 -to 00:02:20 -c copy out.mp4`
 
 **Speed up video**
 `ffmpeg -i video.mp4 -filter:v "setpts=0.5*PTS" out.mp4`
