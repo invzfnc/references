@@ -21,4 +21,7 @@
 **Add subtitle/captions**
 `ffmpeg -i in.mp4 -vf "subtitles=captions.sbv:force_style='Fontname=Calibri,OutlineColour=&H808080,BorderStyle=3,FontSize=16'" out.mp4`
 
+**Overlay video to bottom right of base video with padding of 10 pixels**
+`ffmpeg -i base.mp4 -vf "movie=overlay.mp4,scale=500:-1[inner];[in][inner]overlay=main_w-(overlay_w+10):main_h-(overlay_h+10)" out.mp4`
+
 https://gist.github.com/steven2358/ba153c642fe2bb1e47485962df07c730#ffmpeg-cheat-sheet
