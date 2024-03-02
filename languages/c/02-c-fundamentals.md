@@ -87,7 +87,8 @@ printf("Height: %d\n", height);
 - `"Height: %d\n"` is a string literal
 - `(`, `)` and `;` are punctuations
 
-Spaces are not critical in most cases. All tokens can be crammed together with no space between  them at all.
+Spaces are not critical in most cases. All tokens can be crammed together with no space between them at all.
+
 
 #### Extra: Inches per pound, rounding up
 Add 165, then divide by 166
