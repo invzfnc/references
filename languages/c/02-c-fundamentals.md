@@ -90,8 +90,12 @@ printf("Height: %d\n", height);
 Spaces are not critical in most cases. All tokens can be crammed together with no space between them at all.
 
 
-#### Extra: Inches per pound, rounding up
-Add 165, then divide by 166
-```c
-weight = (volume + 165) / 166
+#### Extra: Rounding up
+Idiom for rounding **up** integers:
+
+$$\frac{(Dividend + Divisor - 1)}{Divisor}$$
+
+```
+1/3 == 0.33333...
+(1 + 3-1) / 3 == 1
 ```
