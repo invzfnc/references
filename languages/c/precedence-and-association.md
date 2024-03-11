@@ -6,4 +6,4 @@
 |4|additive|+<br>-|left|
 |5|assignment|=<br>\*=<br>/=<br>%=<br>+=<br>-=|right|
 
-![[precedence-association-image.png]]
+![Precedence and Association](precedence-association-image.png)
