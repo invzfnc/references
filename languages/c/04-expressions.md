@@ -29,3 +29,57 @@ i = j = k = 0;
 // is equivalent to 
 i = (j = (k = 0));
 ```
+
+**L value** represents an object stored in computer memory, not a constant or the result of a computation. Variables are a type of lvalues. Assignment operator requires an lvalue as its left operand so expressions on the left side of an assignment expression like `i + j = 0`, `12 = i` and `-i = j`  are illegal.
+
+**Compound assignment** operators allow us to shorten statements like `i = i + 2` into `i += 2`. There are ten compound assignment operators including:
+- `+=`
+- `-=`
+- `*=`
+- `/=`
+- `%=`
+
+The precedence of these operators are at the lowest (together with `=`). They are right associative, so 
+```c
+i += j += k;
+// is equivalent to 
+i += (j += k);
+```
+
+#### Increment and Decrement Operators
+The increment, `++` and decrement, `--` operators have side effects. `++i` yields `i + 1` and, as a side effect, increments `i`. The post-increment operator `i++` on the other hand yields `i`(unmodified) and increments `i` afterwards.
+```c
+// Prefix increment
+int i = 1;
+printf("%d\n", ++i);  // "2"
+printf("%d\n", i);    // "2"
+```
+```c
+// Postfix increment
+int i = 1;
+printf("%d\n", i++);  // "1"
+printf("%d\n", i);    // "2"
+```
+The `--` has similar properties
+```c
+int i = 1;
+printf("%d\n", --i);  // "0"
+printf("%d\n", i);    // "0"
+```
+```c
+int i = 1;
+printf("%d\n", i--);  // "1"
+printf("%d\n", i);    // "0"
+```
+
+**Evaluating complex expression**
+```c
+a = b += c++ - d + --e / -f
+a = b += (c++) - d + --e / -f
+a = b += (c++) - d + (--e) / (-f)
+a = b += (c++) - d + ((--e) / (-f))
+a = b += ((c++) - d) + ((--e) / (-f))
+a = b += (((c++) - d) + ((--e) / (-f)))
+a = (b += (((c++) - d) + ((--e) / (-f))))
+(a = (b += (((c++) - d) + ((--e) / (-f)))))
+```
