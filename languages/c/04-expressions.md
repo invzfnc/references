@@ -30,7 +30,7 @@ i = j = k = 0;
 i = (j = (k = 0));
 ```
 
-**L value** represents an object stored in computer memory, not a constant or the result of a computation. Variables are a type of lvalues. Assignment operator requires an lvalue as its left operand so expressions on the left side of an assignment expression like `i + j = 0`, `12 = i` and `-i = j`  are illegal.
+**L value** represents an object stored in computer memory, not a constant or the result of a computation. Variables are a type of lvalues. Assignment operator requires an lvalue as its left operand so expressions on the left side of an assignment expression like `i + j = 0`, `12 = i` and `-i = j`  are illegal. *Rvalues* are just *expressions*.
 
 **Compound assignment** operators allow us to shorten statements like `i = i + 2` into `i += 2`. There are ten compound assignment operators including:
 - `+=`
@@ -72,7 +72,7 @@ printf("%d\n", i--);  // "1"
 printf("%d\n", i);    // "0"
 ```
 
-**Evaluating complex expression**
+##### Evaluating complex expression
 ```c
 a = b += c++ - d + --e / -f
 a = b += (c++) - d + --e / -f
@@ -83,3 +83,18 @@ a = b += (((c++) - d) + ((--e) / (-f)))
 a = (b += (((c++) - d) + ((--e) / (-f))))
 (a = (b += (((c++) - d) + ((--e) / (-f)))))
 ```
+
+##### Order of subexpression evaluation
+C doesn't define the order in which subexpressions are evaluated, except for logical and, or, conditional and comma operators. Hence expressions like
+```c
+a = 5;
+c = (b = a + 2) - (a = 1);
+```
+is **undefined**. The value of `c` for most compilers will be either `6` or `2`. (Either `(b = a + 2)` or `(a = 1)` will be evaluated first) The statements above could be rewritten as
+```c
+a = 5;
+b = a + 2;
+a = 1;
+c = b - a;
+```
+The value of `c` will always be `6` after execution.
