@@ -1,0 +1,1 @@
+Shared folder located at `/mnt/hgfs/shared` for Linux
