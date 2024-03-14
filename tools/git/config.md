@@ -1,8 +1,8 @@
 Configuration setup
 
 ```
-git config user.name <name>
-git config user.email <email>
+git config --global user.name <name>
+git config --global user.email <email>
 git config --global init.defaultBranch main
 git config --global core.editor vim
 ```
