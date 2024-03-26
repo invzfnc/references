@@ -146,3 +146,33 @@ if (d < n)
 else
 	printf("%d is prime\n", n);
 ```
+
+`goto` is rarely needed in everyday C programming, `break`, `continue`, and `return`, which are essentially restricted `goto` statements are sufficient to handle most situation that might require a `goto` in other languages.
+
+`goto` can be helpful once in a while - exiting loop form within a `switch` statement
+```c
+while (...) {
+	switch (...) {
+		goto loop_done;  // break won't work here
+	}
+}
+loop_done: ...
+```
+
+#### Null statement
+```c
+// This line contains three statements
+// Statements can be null
+i = 0; ; j = 1;
+```
+
+```c
+for (d = 2; d < n; d++)
+	if (n % d == 0)
+		break;
+
+// is equivalent to 
+
+for (d = 2; d < n && n % d != 0; d++)
+	;  // empty loop body
+```
