@@ -124,7 +124,7 @@ Floating constants by default are stored as double-precision numbers
 57.0l // long double
 ```
 
-#### Character Types
+#### Character types
 ```c
 char ch;
 ch = 'A'; // integer: 65
@@ -142,4 +142,19 @@ for (ch = 'A'; ch <= 'Z'; ch++) ...
 ```c
 signed char sch;
 unsigned char uch;
+```
+
+##### Escape sequences
+```c
+'\a'  // Alert (bell)
+'\b'  // Backspace
+'\f'  // Form feed
+'\n'  // New line
+'\r'  // Carriage return
+'\t'  // Horizontal tab
+'\v'  // Vertical tab
+'\\'  // Backslash
+'\?'  // Question mark (see trigraph)
+'\''  // Single quote
+'\"'  // Double quote
 ```
