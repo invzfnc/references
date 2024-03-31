@@ -20,3 +20,6 @@
 - ANSI (American National Standards Institute) began development of C standard by 1983. It was approved in 1989 as ANSI standard X3.159-1989.
 - This version was approved by the International Organization for Standardization as an international standard ISO/IEC 9899:1990. This version of C is often referred to as C89 or C90. Before this is K&R C.
 - C underwent a few changes in 1995. More changes occurred with the publication of a new standard, ISO/IEC 9899:1999, in 1999, known as the C99 standard.
+
+The history of C standards
+https://stackoverflow.com/questions/17206568/what-is-the-difference-between-c-c99-ansi-c-and-gnu-c
