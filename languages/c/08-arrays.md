@@ -16,6 +16,7 @@ int b[5] = {1, 2, 3};  // {1, 2, 3, 0, 0}
 int c[5] = {0};  // {0, 0, 0, 0, 0}
 int d[] = {1, 2, 3, 4, 5}
 
+bool is_x[10] = {false};  // 10 falses
 ```
 
 **Subscripting/Indexing**
@@ -30,6 +31,7 @@ a[0] = 1;
 printf("%d\n", a[5]);
 ```
 
+**Idioms**
 ```c
 // clears a
 for (i = 0; i < N; i++)
@@ -42,6 +44,17 @@ for (i = 0; i < N; i++)
 // sums the elements of a
 for (i = 0; i < N; i++)
 	sum += a[i];
+
+// looping through array of unknown size
+for (i = 0; i < sizeof(a) / sizeof(a[0]); i++)
+	...
+// to avoid warning for comparing int and size_t
+for (i = 0; i < (int) (sizeof(a) / sizeof(a[0])); i++)
 ```
 
-
+**Designated initializers (C99)**
+```c
+int a[15] = {[2] = 29, [9] = 7, [1] = 0};
+// other elements are initialized with value 0
+// each number in brackets is a designator
+```
