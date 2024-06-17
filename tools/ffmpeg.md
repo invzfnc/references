@@ -24,4 +24,8 @@
 **Overlay video to bottom right of base video with padding of 10 pixels**
 `ffmpeg -i base.mp4 -vf "movie=overlay.mp4,scale=500:-1[inner];[in][inner]overlay=main_w-(overlay_w+10):main_h-(overlay_h+10)" out.mp4`
 
+**Converting .mkv to .gif with high quality**
+`ffmpeg -y -i input.mkv -filter_complex "fps=15,split[v1][v2]; [v1]palettegen=stats_mode=full [palette]; [v2][palette]paletteuse=dither=sierra2_4a" -vsync 0 output.gif`
+https://stackoverflow.com/questions/42980663/ffmpeg-high-quality-animated-gif
+
 https://gist.github.com/steven2358/ba153c642fe2bb1e47485962df07c730#ffmpeg-cheat-sheet
