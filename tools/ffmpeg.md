@@ -28,4 +28,9 @@
 `ffmpeg -y -i input.mkv -filter_complex "fps=15,split[v1][v2]; [v1]palettegen=stats_mode=full [palette]; [v2][palette]paletteuse=dither=sierra2_4a" -vsync 0 output.gif`
 https://stackoverflow.com/questions/42980663/ffmpeg-high-quality-animated-gif
 
+**Reduce video resolution**
+`ffmpeg -i input.mkv -s 721x480 -c:a copy output.mkv`
+
+---
+
 https://gist.github.com/steven2358/ba153c642fe2bb1e47485962df07c730#ffmpeg-cheat-sheet
