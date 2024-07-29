@@ -39,3 +39,28 @@ HTML elements that do not have a closing tag is called **void elements**, like `
 6. **`<body>`**: Includes content that will be displayed to users.
 
 HTML validator: https://validator.w3.org/
+
+#### Text elements
+- `<p>`: Paragraphs
+- `<h1>`-`<h6>`: Headings
+- `<strong>`: Bold
+- `<em>`: Italic
+
+#### Nesting
+Elements nested within other elements makes a **parent and child** relationship between them. Elements at the same level of nesting are considered to be **siblings**.
+
+#### Lists
+- `<ul>`: Unordered lists (like this one)
+- `<li>`: Ordered lists
+
+Syntax:
+```html
+<ul>
+  <li>Item 1</li>
+  <li>Item 2</li>
+  <li>Item 3</li>
+</ul>
+```
+
+#### Links and Images
+- `<a>`: Anchor element. `href` attribute specifies the link for redirection. `target="_blank"`
