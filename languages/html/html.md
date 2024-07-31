@@ -62,5 +62,36 @@ Syntax:
 </ul>
 ```
 
-#### Links and Images
-- `<a>`: Anchor element. `href` attribute specifies the link for redirection. `target="_blank"`
+#### Links
+`<a>` Anchor element. 
+- `href` attribute specifies the link for redirection. 
+- `target="_blank"` opens link in new tab
+- `rel="noopener noreferrer"`
+- `noopener` prevents the opened link from gaining access to the webpage from which it was opened. 
+- `noreferrer` prevents the opened link from knowing which webpage or resource has a link/reference to it. 
+
+
+```html
+<a href="https://www.theodinproject.com/about" target="_blank" rel="noopener noreferrer">About The Odin Project</a>
+```
+
+Absolute links: Links to other websites on the internet. `https://www.theodinproject.com/about`
+Relative links: Links to other pages within our own website. `./page/about.html`
+
+#### Images
+`<img>`
+
+```html
+<!-- Absolute path -->
+ <img src="https://www.theodinproject.com/mstile-310x310.png">
+```
+
+```html
+<!-- Relative path -->
+ <img src="https://www.theodinproject.com/mstile-310x310.png" alt="The Odin Project Logo" height="310" width="310">
+```
+
+- `src` specifies image path
+- `alt` describes image
+- `width` defines the width of image
+- `height` defines the height of image
