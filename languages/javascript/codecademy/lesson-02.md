@@ -13,7 +13,9 @@ Rules for naming variables
 - Are case sensitive
 - Cannot be the same as [keywords](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Lexical_grammar#keywords)
 
-[`var` vs `let`](https://stackoverflow.com/questions/762011/what-is-the-difference-between-let-and-var)
+`var` vs `let`
+- (https://stackoverflow.com/questions/762011/what-is-the-difference-between-let-and-var)
+- https://javascript.info/var
 
 `const`
 - Cannot be reassigned with new values, or else `TypeError`
