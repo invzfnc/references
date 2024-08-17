@@ -86,7 +86,7 @@ Selects the last selector that has an ancestor (parent, grandparent, etc) that m
 
 ## Properties
 ### Colors
-- `color`
+- `color` (foreground color)
 - `background-color`
 
 #### CSS Legal Color Values
@@ -101,12 +101,12 @@ Selects the last selector that has an ancestor (parent, grandparent, etc) that m
 
 ### Typography
 - `font-family`
-    - Font family name, eg `DejaVu Sans`
+    - Font family name, eg `"DejaVu Sans"`
     - Generic family name, eg `sans-serif`
     - Example: `font-family: "DejaVu Sans", sans-serif;`
 - `font-size`
-    - `font-size: 22px` (No whitespace)
-- `font-weight`
+    - `font-size: 22px` (No whitespace in between)
+- `font-weight` (value ranges from 1 to 1000)
     - Boldness of text
     - `font-weight: 700` == `font-weight: bold`
 - `text-align`
