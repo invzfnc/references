@@ -10,3 +10,7 @@ for (int i = 0; i < n; i++) {
     }
 }
 ```
+
+#### Inversions
+A pair of array elements that are in the wrong order / when $a < b$ and $array[a] > array[b]$  
+Example: The array `{1, 2, 2, 6, 3, 5, 9, 8}` has three inversions: `(6, 3)`, `(6, 5)` and `(9, 8)`
