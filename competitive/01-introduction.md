@@ -1,3 +1,44 @@
+#### Template
+A typical C++ code template for competitive programming:
+```cpp
+#include <bits/stdc++.h>
+
+using namespace std;
+
+int main() {
+	// solution
+}
+```
+The `#include` statement includes the entire standard library.
+
+Compilation:
+```bash
+g++ -std=c++11 -O2 -Wall test.cpp -o test
+```
+
+#### Input and Output
+Done through standard streams, `cin` and `cout` / `scanf` and `printf` are used.
+```cpp
+int a, b;
+string x;
+cin >> a >> b >> x;
+
+/* reads both
+   123 456 monkey
+   and
+   123    456
+   monkey 
+*/
+```
+
+```cpp
+int a = 123, b = 456;
+string x = "monkey";
+cout << a << " " << b << " " << x << "\n";
+```
+
+---
+
 **Dynamic programming**: Algorithmic problem is first broken down into sub-problems, the results are saved, and then the sub-problems are optimized to find the overall solution.
 
 **Greedy algorithm**: Any algorithm that follows the problem-solving heuristic of making the locally optimal choice at each stage.
