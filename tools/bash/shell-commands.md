@@ -72,3 +72,6 @@ Redirects output stream of left side to right side, `tee` then writes input to b
 `/dev/null`
 `grep foobar filename > /dev/null 2> /dev/null`
 Throw away/suppress output
+
+`&` ampersand at the end: Run command in background (does not block prompt)
+`jobs` to list processes
