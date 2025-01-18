@@ -90,3 +90,7 @@ And
 true && echo "This will be printed"
 false && echo "This will not be printed"
 ```
+
+---
+
+Reference: https://missing.csail.mit.edu/2020/shell-tools/
