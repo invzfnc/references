@@ -14,7 +14,7 @@
 **External script**
 ```html
 <head>
-  <!-- <link rel="stylesheet" href="styles.css"> (css) -->
+  <link rel="stylesheet" href="styles.css">
   <script src="script.js"></script>
 </head>
 ```
