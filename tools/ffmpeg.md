@@ -31,6 +31,10 @@ https://stackoverflow.com/questions/42980663/ffmpeg-high-quality-animated-gif
 **Reduce video resolution**
 `ffmpeg -i input.mkv -s 721x480 -c:a copy output.mkv`
 
+**Convert h.264 to h.265 (no change in resolution)**
+`ffmpeg -i input.mp4 -c:v libx265 -vtag hvc1 -c:a copy output.mp4`
+https://stackoverflow.com/questions/58742765/convert-videos-from-264-to-265-hevc-with-ffmpeg
+
 ---
 
 https://gist.github.com/steven2358/ba153c642fe2bb1e47485962df07c730#ffmpeg-cheat-sheet
