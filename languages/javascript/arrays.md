@@ -57,5 +57,22 @@ console.log(cars.push("Audi"));  // 4
 console.log(cars);  // [ 'Nissan', 'Porsche', 'Koenigsegg', 'Audi' ]
 ```
 
+"Popping" first element:
+```js
+cars.shift();
+console.log(cars);  // [ 'Porsche', 'Koenigsegg' ]
+```
+
+"Pushing" element to front:
+```js
+cars.unshift("Honda");
+console.log(cars);  // [ 'Honda', 'Nissan', 'Porsche', 'Koenigsegg' ]
+```
+
+`splice`
+```js
+// Syntax
+arr.splice(starting_position[, how_many_elements_to_remove, replacement1, replacement2 ...]);
+```
 
 Full list of methods and properties: https://www.w3schools.com/jsref/jsref_obj_array.asp
