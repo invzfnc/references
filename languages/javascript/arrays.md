@@ -75,4 +75,55 @@ console.log(cars);  // [ 'Honda', 'Nissan', 'Porsche', 'Koenigsegg' ]
 arr.splice(starting_position[, how_many_elements_to_remove, replacement1, replacement2 ...]);
 ```
 
+`map`
+```js
+// map returns a new array, the original array remains unchanged.
+
+function square(n) {
+    return n * n;
+}
+
+const numbers = [0, 1, 2, 3, 4, 5];
+const squares = numbers.map(square);
+
+console.log(numbers);
+console.log(squares);
+
+// [ 0, 1, 2, 3, 4, 5 ]
+// [ 0, 1, 4, 9, 16, 25 ]
+```
+
+`filter`
+```js
+// the custom callback function (as a test) will return either true or false, elements passing the test will be added to the new array returned at the end.
+
+function is_odd(n) {
+    return n % 2;
+}
+
+const numbers = [0, 1, 2, 3, 4, 5];
+const odds = numbers.filter(is_odd);
+
+console.log(numbers);
+console.log(odds);
+
+// [ 0, 1, 2, 3, 4, 5 ]
+// [ 1, 3, 5 ]
+```
+
+`reduce`
+```js
+function f(n, m) {
+    return n * m;
+}
+
+const nums = [1, 2, 3, 4, 5];
+const product = nums.reduce(f);
+
+console.log(nums);
+console.log(product);
+
+// [ 1, 2, 3, 4, 5 ]
+// 120
+```
 Full list of methods and properties: https://www.w3schools.com/jsref/jsref_obj_array.asp
