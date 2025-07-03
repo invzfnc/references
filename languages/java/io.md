@@ -102,3 +102,11 @@ String s = String.valueOf(12.3);  // "12.3"
 ```
 
 https://stackoverflow.com/questions/5071040/java-convert-integer-to-string
+
+
+##### Formatting console output
+```java
+System.out.printf("%4.2f", x);
+```
+
+See [conversion specification](../c/03-formatted-input-output.md)
