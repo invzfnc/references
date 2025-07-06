@@ -47,3 +47,16 @@ System.arraycopy(sourceArray, 0, targetArray, 0, sourceArray.length)
 ```java
 new double[]{1.1, 2.2, 3.3, 4.4};
 ```
+
+##### Variable-length argument lists
+```java
+public static void f(double... numbers) {
+    Arrays.sort(numbers);
+    for (double x : numbers)
+        System.out.print(x + " ");
+}
+
+f(1, 9, 7, 4, 6, 3);
+f(new int[] {1, 9, 7, 4, 6, 3});
+// 1 3 4 6 7 9 
+```
