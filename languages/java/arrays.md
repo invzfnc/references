@@ -60,3 +60,23 @@ f(1, 9, 7, 4, 6, 3);
 f(new int[] {1, 9, 7, 4, 6, 3});
 // 1 3 4 6 7 9 
 ```
+
+##### Sorting and searching arrays
+Static methods of `java.util.Arrays` for **sorting**:
+- `sort(list)` to sort the whole list.
+- `sort(list, startIndex, endIndex)` to sort the partial list.
+- `parellelSort(list)` sorts the whole list using multiple threads.
+- `parellelSort(list, startIndex, endIndex)` to sort the partial list using multiple threads.
+
+**Searching**
+- `binarySearch(list, key)`
+
+**Comparing**
+- `equals(list1, list2)`
+
+**Filling elements**
+- `fill(list, element)` fills `element` to the whole array.
+- `fill(list, startIndex, endIndex, element)` fills `element` to partial array.
+
+**String representation**
+- `toString(list)` returns `"[a, b, c, ...]"`
