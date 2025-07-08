@@ -1,3 +1,4 @@
+#### Single-dimensional arrays
 ##### Declaring array variable
 ```java
 double[] arr;
@@ -80,3 +81,42 @@ Static methods of `java.util.Arrays` for **sorting**:
 
 **String representation**
 - `toString(list)` returns `"[a, b, c, ...]"`
+
+#### Two-dimensional arrays
+##### Definition and basic properties
+```java
+int[][] matrix = {
+    {1, 2, 3},
+    {4, 5, 6},
+    {7, 8, 9},
+    {10, 11, 12}
+};
+
+[]()matrix[0][1] == 2;
+matrix.length == 4;
+matrix[0].length == 3;
+
+// method with multi dim array argument
+public static int sum(int[][] m);
+```
+
+##### Ragged arrays
+Ragged arrays are two-dimensional arrays with different row lengths.
+
+```java
+int[][] triangleArray = new int[5][];  // requires first index to be specified
+triangleArray[0] = new int[5];
+triangleArray[1] = new int[4];
+triangleArray[2] = new int[3];
+triangleArray[3] = new int[2];
+triangleArray[4] = new int[1];
+```
+
+#### Multi-dimensional arrays
+```java
+double[][][] arr = new double[6][5][2];
+double[][][] arr2 = {
+{{1, 2}, {1, 2}, {1, 2}},
+{{1, 2}, {1, 2}, {1, 2}},
+{{1, 2}, {1, 2}, {1, 2}}};
+```
