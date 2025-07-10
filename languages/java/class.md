@@ -40,3 +40,18 @@ class Circle {
 ```
 
 A Java file can contain more than one class, but it can have only one public class, and it must share the same name as the file.
+
+**Constructor**
+- Must have the same name as the class itself.
+- Does not have a return type, not even `void`.
+- Is invoked using the `new` operator when an object is created.
+
+A default constructor will be provided when there is no constructor explicitly defined in the class.
+
+Objects are accessed via the object's reference variables, which contains references to the objects. (like arrays)
+
+Default value of data fields if not specified:
+- reference type: `null`
+- numeric type: `0`
+- `boolean`: `false`
+- `char`: `\u0000`
