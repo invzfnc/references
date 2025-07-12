@@ -9,18 +9,28 @@ public class TestCircle {
 }
 
 class Circle {
-    double radius;
+    private double radius;
 
     /* Construct a circle object */
     Circle() {
-        radius = 1;
+        this(1.0);
     }
 
     /* Construct a circle object */
-    Circle(double newRadius) {
-        radius = newRadius;
+    Circle(double radius) {
+        this.radius = radius;
     }
 
+	/* Return radius */
+	public double getRadius() {
+	    return radius;
+	}
+
+	/* Set a new radius */
+	public void setRadius(double newRadius) {
+	    radius = (newRadius >= 0) ? newRadius : 0;
+	}
+	
     /* Return the area of this circle */
     double getArea() {
         return radius * radius * Math.PI;
@@ -48,10 +58,36 @@ A Java file can contain more than one class, but it can have only one public cla
 
 A default constructor will be provided when there is no constructor explicitly defined in the class.
 
-Objects are accessed via the object's reference variables, which contains references to the objects. (like arrays)
+Objects are accessed via the object's **reference variables**, which contains references to the objects. (like arrays)
 
-Default value of data fields if not specified:
+**Default value** of data fields if not specified:
 - reference type: `null`
 - numeric type: `0`
 - `boolean`: `false`
 - `char`: `\u0000`
+
+**Static variables**
+```java
+static int x;
+final static double PI = 3.14159265358979323846;
+```
+
+Instance methods can access/invoke both instance and static members, whereas static methods can access/invoke only static members.
+
+**Visibility modifiers**
+- `public`: accessible from any other classes
+- default: accessible from any classes in the same package
+- `private`: accessible only from within its own class (applies only to the members of a class)
+
+To prevent users from creating objects from the Math class, the constructor in `java.lang.Math` is defined as `private Math() { ... }`
+
+**Data encapsulation**: Private data field with public getter and setter methods (also referred to as an accessor and a mutator).
+
+**`this` keyword** refers to the calling object. It can also be used inside a constructor to invoke another constructor of the same class. The `this` keyword is normally omitted for brevity. Nevertheless, the this keyword is needed to reference a data field hidden by a method or constructor parameter, or to invoke an overloaded constructor.
+
+```java
+private double radius = 1;
+public void setRadius(double radius) {
+	this.radius = radius;
+}
+```
