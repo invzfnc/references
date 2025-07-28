@@ -91,3 +91,28 @@ public void setRadius(double radius) {
 	this.radius = radius;
 }
 ```
+
+**Inheritance** (is-a)
+```java
+public class Circle extends GeometricObject {
+	...
+}
+```
+`extends` does not allow multiple inheritance. Multiple inheritance can be achieved through interfaces.
+
+**`super` keyword** refers to the superclass of the class in which `super` appears. It can be used to call a superclass constructor or a superclass method.
+
+Unlike properties and methods, the constructors of a superclass are not inherited by a subclass. They can only be invoked from the constructors of the subclasses using the keyword `super`, and the call must be the first statement in the constructor.
+```java
+public Circle(double radius, String color, boolean filled) {
+	super(color, filled);
+	this.radius = radius;
+}
+```
+If neither an overloaded constructor or its superclass constructor is invoked explicitly, the compiler automatically puts `super()` as the first statement in the constructor.
+
+**`super.method(argument)`** to call superclass methods.
+
+**Override annotation, `@Override`** denotes that the annotated method is required to override a method in its superclass. If the method annotated does not override its superclass's method, the compiler will report an error.
+
+All classes derive from `Object`, which defines `toString`, which returns `"ClassName@memoryAddress"`. Calling `System.out.println(object)` is equivalent to calling `System.out.println(object.toString())`.
