@@ -58,6 +58,9 @@
 
 `J` - Join two lines  
 
+`"*y` - Yank to system clipboard
+`"*p` - Paste from system clipboard
+
 (On current line, with one character)  
 `f{char}` - Search/Find for character on current line (and move cursor to search result)  
 `t{char}` - `f{char}` with offset of 1 (Right before or right after the target)  

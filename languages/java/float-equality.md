@@ -5,7 +5,7 @@ public class FloatEqualityTest {
     public static void main(String[] args) {
         double x = 1.0 - 0.1 - 0.1 - 0.1;
         System.out.println("x is " + x);
-        System.out.println("x == 0.7 is " + (x == 0.5));
+        System.out.println("x == 0.7 is " + (x == 0.7));
         
         // Very small difference, 1 * 10^-14
         final double EPSILON = 1E-14;

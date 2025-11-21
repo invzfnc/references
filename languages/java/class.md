@@ -2,7 +2,7 @@
 public class TestCircle {
 
     public static void main(String[] args) {
-        Circle circle = new Circle(3.0);
+        Circle circle = new Circle(3.0);  // holds reference to object
         System.out.printf("Area: %.3f\n", circle.getArea());
         System.out.printf("Perimeter: %.3f\n", circle.getPerimeter());
     }

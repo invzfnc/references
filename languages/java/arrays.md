@@ -92,7 +92,7 @@ int[][] matrix = {
     {10, 11, 12}
 };
 
-[]()matrix[0][1] == 2;
+matrix[0][1] == 2;
 matrix.length == 4;
 matrix[0].length == 3;
 
