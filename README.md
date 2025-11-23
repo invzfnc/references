@@ -17,6 +17,7 @@ HTML, CSS, JavaScript
 - [The Odin Project](https://www.theodinproject.com/) [Foundations](https://www.theodinproject.com/paths/foundations/courses/foundations)
 - [The Odin Project](https://www.theodinproject.com/) [JavaScript Course](https://www.theodinproject.com/paths/full-stack-javascript/courses/javascript)
 - [Josh W Comeau's](https://www.joshwcomeau.com/) [Interactive Guide to Flexbox](https://www.joshwcomeau.com/css/interactive-guide-to-flexbox/)
+- [WesBos'](https://wesbos.com/)[Closures](https://wesbos.com/javascript/03-the-tricky-bits/closures)
 
 React
 - [React Official Website](https://react.dev/learn)
