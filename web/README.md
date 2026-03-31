@@ -1,0 +1,1 @@
+Notes for this section is messy and unorganized. These notes are meant to help picking up modern web development quickly.
