@@ -78,3 +78,10 @@ In this case, `<n>` would be `1` for `ba30c26`
 
 `git checkout <hash> -- <filename>`
 	Restore the `<filename>` in `<hash>`  commit state
+
+
+https://stackoverflow.com/a/1338756
+```
+git rebase -i <commit>~1
+```
+This will start the rebase in interactive mode `-i` at the point just before the commit you want to whack. The editor will start up listing all of the commits since then. Delete the line containing the commit you want to obliterate and save the file. Rebase will do the rest of the work, deleting only that commit, and replaying all of the others back into the log.
