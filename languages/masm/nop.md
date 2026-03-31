@@ -1,0 +1,1 @@
+the "no operation" instruction takes up 1 byte of program storage and doesn't do any work. the `nop` instruction can be used to align the address/add padding to control where the next instruction lands in memory. this is important because x86 processors are designed to load code and data more quickly from even doubleword addresses.
