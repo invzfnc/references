@@ -1,7 +1,8 @@
 # references
 Notes for my own reference.
 
-#### Resources I Found Useful
+### Resources I Found Useful
+
 C
 - *C Programming: A Modern Approach, 2nd Edition* by K. N. King
 
@@ -23,12 +24,16 @@ React
 - [React Official Website](https://react.dev/learn)
 - [The Odin Project](https://www.theodinproject.com/) [React Course](https://www.theodinproject.com/paths/full-stack-javascript/courses/react)
 
-Web - General
+General Web Development
 - [Modern JavaScript Explained For Dinosaurs](https://peterxjang.com/blog/modern-javascript-explained-for-dinosaurs.html)
 
 DS&A
 - *Introduction to Algorithms, 4th Edition* by  Thomas H Cormen, Charles E Leiserson, Ronald L Rivest, Clifford Stein
 - *Grokking Algorithms* by Aditya Y. Bhargava
+
+Computer Systems Architecture
+- *Computer Organization and Architecture, 10th Edition* by William Stallings
+- *Assembly Language for x86 Processors, 7th Edition* by Kip R. Irvine
 
 Git
 - [*Pro Git*](https://git-scm.com/book/en/v2) by Scott Chacon, Ben Straub
