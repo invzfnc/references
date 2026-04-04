@@ -30,6 +30,7 @@ General Web Development
 DS&A
 - *Introduction to Algorithms, 4th Edition* by  Thomas H Cormen, Charles E Leiserson, Ronald L Rivest, Clifford Stein
 - *Grokking Algorithms* by Aditya Y. Bhargava
+- Visualization: https://visualgo.net/
 
 Computer Systems Architecture
 - *Computer Organization and Architecture, 10th Edition* by William Stallings
