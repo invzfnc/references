@@ -117,6 +117,28 @@ Modern processors often use a combination: a fast virtually indexed, physically 
 
 There are fewer cache lines than main memory blocks, an algorithm is needed to decide which blocks map into which lines
 
-- Direct
-- Associative
-- Set-associative
+#### Direct mapping
+
+$$i = j \bmod m$$
+
+$i =$ cache line number  
+$j =$ main memory block number  
+$m =$ number of lines in the cache  
+
+Each main memory address consist of three fields.  
+Let's say the memory is byte-addressable, so each address refers to 1 byte, and offset selects a byte. If the block size is 4 words, or 4 bytes, the size of offset (w bits) will be $2^2$ bits ($w = 2^2$)
+
+Number of blocks in memory = $2^s$  
+Number of cache lines =$2^r$  
+
+More on the [flow](./direct-addressing.md).
+
+Disadvantage: there is a fixed cache location for any given block. Thus, if a program happens to reference words repeatedly from two different blocks that map into the same line, then the blocks will be continually swapped in the cache, and the hit ratio will be low (a phenomenon known as thrashing).
+
+#### Associative mapping
+
+TODO
+
+#### Set-associative mapping
+
+TODO
