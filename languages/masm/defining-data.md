@@ -117,3 +117,13 @@ BYTE  4 DUP("STACK")  ; 20 bytes: "STACKSTACKSTACKSTACK"
 array WORD 5 DUP(?)   ; 5 16-bit values, uninitialized
 ```
 
+### Floating-point types
+
+REAL4 is 4 bytes, REAL8 is 8 byte, REAL10 is 10 byte extended precision. 
+
+```asm
+rVal1 REAL4 -1.2
+rVal2 REAL8 3.2E-260
+rVal3 REAL10 4.6E+4096
+ShortArray REAL4 20 DUP(0.0)
+```
