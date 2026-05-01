@@ -31,6 +31,11 @@ fastapi dev main.py
 Then visit `http://127.0.0.1:8000`, `{"Hello":"World}` should be visible.
 When visiting `http://127.0.0.1:8000/items/1?q=somequery`, page shows `{"item_id":1,"q":"somequery"}`.
 
+If using uv:
+```sh
+uv run fastapi dev main.py
+```
+
 An API is created, received HTTP requests in the paths and both paths take GET operations. `item_id` is a path parameter, `q` is an optional query  parameter.
 
 #### Automatic interactive API docs
